@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="area-text">
+        <div class="text">
+            <h1>Cálculo IMC</h1>
+            <p>IMC é a sigla para Índice de Massa Corpórea, parâmetro adotado pela Organização Mundial de Saúde para calcular o peso ideal de cada pessoa.</p>
+            <p>O índice é calculado da seguinte maneira: divide-se o peso do paciente pela sua altura elevada ao quadrado. Diz-se que o indivíduo tem peso normal quando o resultado do IMC está entre 18,5 e 24,9.</p>
+            <img src="IMC.png">
+            <p>Quer descobrir seu IMC? Insira seu peso e sua altura nos campos abaixo e compare com os índices da tabela. Importante: siga os exemplos e use pontos como separadores.</p>
+        </div>
+    </div>
+    <div class="area-container">
+        <div class="container-calculador">
+            <h1>Calculador de IMC</h1>
+            <div class="container-input">
+                <h2 >Altura</h2>
+                <input id="height" type="number" class="height" name="height" placeholder="Exemplo: 1,70">
+            </div>
+            <div class="container-input">
+                <h2 >Peso</h2>
+                <input id="weight" type="number" placeholder="Exemplo: 69,2">
+            </div>
+            
+            <button onclick="calculate()">Calcular</button>
+        </div>
+    </div>
+    <div class="container-tabela-area">
+        <div class="container-tabela">
+            <h2>VEJA A INTERPRETAÇÃO DO IMC</h1>
+            <h2 id="imc" class="seu-imc">Seu IMC:</h2>
+            <h2 id="sua-classificao" class="sua-classificao">Sua classifição: </h2>    
+                <div class="titulo">
+                    <p class="titulo-imc">IMC</p>
+                    <P class="titulo-classificao">CLASSIFICAÇÃO</P>
+                    <P>OBESIDADE (GRAU)</P>
+                </div>
+                <div id="magreza" class="magraza">
+                    <p class="num-imc">MENOR QUE 18,5</p>
+                    <P class="tipo-magreza">MAGRAZA</P>
+                    <P class="grau-0">0</P>
+                </div>
+                <div id="normal" class="normal">
+                    <p class="num-imc">ENTRE 18,5 E 24,9</p>
+                    <P class="tipo-normal">NORMAL</P>
+                    <P class="grau-0">0</P>
+                </div>
+                <div id="sobrepeso" class="sobrepeso">
+                    <p class="num-imc">ENTRE 25,0 E 29,9</p>
+                    <P class="tipo-sobrepeso">SOBREPESO</P>
+                    <P class="grau1">l</P>
+                </div>
+                <div id="obesidade" class="obesidade">
+                    <P class="num-imc">ENTRE 30,0 E 39,0</P>
+                    <P class="tipo-obesidade">OBESIDADE</P>
+                    <P class="grau2">ll</P>
+                </div>
+                <div id="obesidade-grave" class="obesidade-grave">
+                    <p class="num-imc">MAIOR QUE 40,0</p>
+                    <P class="tipo-obe-grave">OBESIDADE GRAVE</P>
+                    <P class="grau3">lll</P>
+        
+        </div>
+    </div>
+
+    <script src="index.js"></script>
+</body>
+</html>
